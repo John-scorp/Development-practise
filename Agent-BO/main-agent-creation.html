@@ -8,21 +8,29 @@
  <meta http-equiv="refresh" content="120">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title> Main Agent Creation</title>
- <img src="images/logo.png" alt="logo" style="width:100px; height:100px">
-  <div >
-   <p>Username:<br> Balance: <br> Server time:<br> </p>
-  </div>
-  <div>
-  <input type="button" onclick="window.location.href='agent-login.html'"; value="Logout"/><br><br>
+ 
   
-  <input type="button" value="My Account">
-  </div>
+  <link rel="stylesheet" href="style/style1.css">
  </head>
    <body>
+
+<div class="logo">
+ <img src="images/logo.png" alt="logo" style="width:100px; height:100px">
+</div>
+<div class= "head" >
+
+   <p>Username:<br> Balance: <br> Server time:<br> </p>
  
-   <div>
+	  <div>
+ 	 <input type="button" onclick="window.location.href='agent-login.html'"; value="Logout"/><br>
+  
+  	<input type="button" value="My Account">
+  	</div>
+ </div>
+ 
+   <div class = "login">
    <h1> Main Agent Creation</h1>
-  <form autocomplete="on" method="post">
+  <form autocomplete="on" method="post" id="create">
    <label for="currency">Select Currency:</label><br>
    <input list="currency" name="currency" size="5">
     <datalist id="currency">
@@ -53,10 +61,13 @@
    <input type="text" id="balance.alert" name="balance.alert"><br><br>
    <label for="mobile"> Enter Mobile:</label>
    <input for="text" id="mobile" name="mobile"><br><br>
-   <input type="button" value="Create">
+  
   </form>
-  </div>
- 
+  
+		<div class="button">
+ 		 <input type="button" value="Create" form="create">
+  		 </div>		
+	</div>
   <div>
   <nav>
     <ul>

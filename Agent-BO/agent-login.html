@@ -8,31 +8,27 @@
    <meta name="description" content="Agent login">
    <meta http-equiv="refresh" content="120">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <img src="images/naresh1.jpeg" alt="logo" style="width:160px; height:157px"><br>
-   <style>
-    .login{
-          margin-top: 50px;
-          margin-left: 500px;
-          Margin-bottom: 50px;
-	  margin-right:500px;
-          border: 5px solid blue;
-          B
-           }
-   </style>
+   <img src="images/logo.png" alt="logo" style="width:160px; height:157px"><br>
+   <link rel="stylesheet" href="style/style1.css">
  </head>
   <body>
   <div class="login">
-  <h1> Back office Login </h1>
+  <h1> Back Office Login </h1>
   <p> Please enter account details &#128511; </p>
-  <form autocomplete="on" method="post">
+  <form autocomplete="on" method="post" id="login1">
    <label for="username">Enter Username:  </label>
    <input type="text" id="username" name="username"><br><br>
    <label for="password">Enter Password:  </label>
    <input type="text" id="password" name="password"><br><br>
    <input type="checkbox" id="t&c" name="t&c" value="t&c">
    <label for="t&c"> I accept Terms & Conditions</label><br><br>
-  <input type="button" onclick="window.location.href='main-agent-creation.html'"; value="Login"/>
+  
   </form>
+  <div class="button">
+
+  <input type="button"  onclick="window.location.href='main-agent-creation.html'"; value="Login" form ="login1"/>
+  </div>
+  
  </div>
 
   </body>
